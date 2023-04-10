@@ -77,8 +77,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  {/* <input onSubmit={sendEmail} type="submit" className="flat-button" value="SEND" /> */}
-                  <button type='submit' onClick={sendEmail}>Send email</button>
+                  <input onSubmit={sendEmail} type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
             </form>
