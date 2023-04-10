@@ -34,7 +34,7 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
-          exact="true"
+          
           activeclassname="active"
           className="about-link"
           to={AppRoutes.About}
@@ -43,7 +43,7 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
-          exact="true"
+    
           activeclassname="active"
           className="contact-link"
           to={AppRoutes.Contact}
