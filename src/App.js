@@ -9,13 +9,13 @@ import Contact from "./components/Contact/Contact";
 const App = () => {
   return (
     <>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Route exact path="/" element={<Layout />}>
+    <Routes >
+      <Route exact path="http://panticaleksandar.github.io/portfolio" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="http://panticaleksandar.github.io/portfolio/about" element={<About />} />
+        <Route path="http://panticaleksandar.github.io/portfolio/contact" element={<Contact />} />
       </Route>
-    </BrowserRouter>
+    </Routes>
     </>
   )
 }
