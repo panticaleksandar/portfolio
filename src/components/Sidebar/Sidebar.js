@@ -29,12 +29,12 @@ const Sidebar = () => {
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink exact="true" activeclassname="active" to={AppRoutes.Home}
-          onClick={() => setShowNav(false)}>
+          onClick={() => setShowNav(false)} end>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
-          
+          exact="true"
           activeclassname="active"
           className="about-link"
           to={AppRoutes.About}
@@ -43,7 +43,7 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           onClick={() => setShowNav(false)}
-    
+          exact="true"
           activeclassname="active"
           className="contact-link"
           to={AppRoutes.Contact}
