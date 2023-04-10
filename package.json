@@ -1,8 +1,8 @@
 {
   "homepage": "http://panticaleksandar.github.io/portfolio",
-  "name": "portfolio",
+  "name": "/",
   "version": "0.1.0",
-  "private": true,
+  "private": true,  
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
