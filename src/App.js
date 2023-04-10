@@ -10,7 +10,7 @@ import { AppRoutes } from './constants/routes'
 const App = () => {
   return (
     <>
-      <Routes>
+      <Routes basename="/portfolio">
         <Route path={AppRoutes.Home} element={<Layout />}>
           <Route path="" element={<Home />} />
           <Route path={AppRoutes.About} element={<About />} />
