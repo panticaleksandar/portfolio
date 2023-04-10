@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Home.scss'
+import { AppRoutes } from '../../constants/routes'
 // import Logo from './Logo/Logo'
 
 const Home = () => {
@@ -60,7 +61,7 @@ const Home = () => {
             />
           </h1>
           <h2>Junior Front End Developer</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to={AppRoutes.Contact} className="flat-button">
             CONTACT ME
           </Link>
         </div>

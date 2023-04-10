@@ -16,18 +16,19 @@ import {
   faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
+import { AppRoutes } from '../../constants/routes'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
 
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to={AppRoutes.Home}>
         <img src={LogoS} alt="logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="Aleksandar" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink exact="true" activeclassname="active" to="/"
+        <NavLink exact="true" activeclassname="active" to={AppRoutes.Home}
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -36,7 +37,7 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           className="about-link"
-          to="/about"
+          to={AppRoutes.About}
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -45,7 +46,7 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           className="contact-link"
-          to="/contact"
+          to={AppRoutes.Contact}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
