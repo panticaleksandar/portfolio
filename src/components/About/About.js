@@ -13,6 +13,7 @@ import {
   faSass,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { AppRoutes } from '../../constants/routes'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -51,7 +52,7 @@ const About = () => {
           <h2>Skills</h2>
           <p>HTML5, CSS3, JavaScript, React, Git, Sass, Redux</p>
           {/* <button className='flat-button' onClick={downloadCv}>DOWNLOAD CV</button> */}
-          <Link to="/file/Aleksandar_Pantic_CV.pdf" target="_blank" download className='flat-button'>Download CV</Link>
+          <Link to={AppRoutes.Cv} target="_blank" download className='flat-button'>Download CV</Link>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
