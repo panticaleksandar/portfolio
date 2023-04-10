@@ -10,10 +10,10 @@ const App = () => {
   return (
     <>
     <Routes >
-      <Route exact path="http://panticaleksandar.github.io/portfolio" element={<Layout />}>
+      <Route exact path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="http://panticaleksandar.github.io/portfolio/about" element={<About />} />
-        <Route path="http://panticaleksandar.github.io/portfolio/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
     </>
