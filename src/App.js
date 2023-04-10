@@ -9,11 +9,11 @@ import Contact from "./components/Contact/Contact";
 const App = () => {
   return (
     <>
-    <BrowserRouter basename={window.location.pathname || ''}>
-      <Route exact path="" element={<Layout />}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Route exact path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </BrowserRouter>
     </>
