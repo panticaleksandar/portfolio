@@ -78,7 +78,7 @@ const Contact = () => {
                 </li>
                 <li>
                   {/* <input onSubmit={sendEmail} type="submit" className="flat-button" value="SEND" /> */}
-                  <button type='submit' onClick={sendEmail}>Send</button>
+                  <button type='submit' onClick={sendEmail}>Send email</button>
                 </li>
               </ul>
             </form>
